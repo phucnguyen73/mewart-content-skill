@@ -12,9 +12,7 @@
    ```
    Cài giúp tôi skill từ repo này, làm theo file INSTALL.md trong repo: <link repo anh Nguyên gửi>
    ```
-2. AI tự cài những gì máy còn thiếu. Em chỉ làm 2 việc khi AI nhắc:
-   - **Nhập mã bí mật (App Secret):** xin anh Nguyên qua tin nhắn riêng. AI sẽ bảo em mở một cửa sổ PowerShell, dán lệnh, rồi dán mã vào đó. **Không dán mã vào ô chat với AI.**
-   - **Đăng nhập Lark:** bấm link AI gửi, đăng nhập Lark Mewart, chọn **Đồng ý / Authorize**, rồi quay lại báo AI "xong rồi".
+2. AI tự cài và tự kiểm tra. Nếu AI gửi **link đăng nhập Lark**, em bấm vào, đăng nhập Lark Mewart, chọn **Đồng ý / Authorize**, rồi quay lại báo AI "xong rồi".
 3. Cài xong, **tắt và mở lại** OpenCode.
 4. Thử xem đã chạy chưa: gõ `Kiểm tra giúp chị đã vào được base content chưa`. AI trả lời có tên em và tên base là được.
 

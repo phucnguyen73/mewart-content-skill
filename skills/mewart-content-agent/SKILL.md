@@ -43,8 +43,8 @@ Nếu câu chat không rõ thuộc việc nào thì hỏi lại.
 1. **Mọi lệnh chạy `--as user`** bằng tài khoản Lark của chính người chat trên tenant `hienmewmakeup.sg.larksuite.com`.
    - Đầu phiên chạy `lark-cli auth status` để lấy `openId` và `userName`.
    - Nếu `lark-cli base +base-get --base-token N0uub2iuPadQSlsxdyVl3aARguc --as user` bị từ chối thì dừng và hướng dẫn `lark-cli auth login --domain base,docs,wiki,sheets` (skill `lark-shared`).
-   - **Profile chuẩn tên `mewart`** (bộ cài trong repo `mewart-content-skill` tạo profile này với app `cli_a985b5bc3ff85ed4`, brand `lark`). Nếu `lark-cli profile list` có `mewart` mà profile đang active không phải `mewart`, thì **thêm `--profile mewart` vào mọi lệnh**. Không tự `profile use` để đổi profile mặc định của máy.
-   - Máy anh Nguyên chưa có profile `mewart`; profile tương ứng là `cli_a985b5bc3ff85ed4`.
+   - Dùng lark-cli **đã cấu hình sẵn** trên máy. Không đổi hay xoá profile.
+   - Nếu profile mặc định không vào được base, xem `lark-cli profile list` và tìm profile đang đăng nhập tài khoản Lark Mewart. Thêm `--profile <tên đó>` vào **mọi lệnh**; bộ cài cũng in tên profile này.
 2. **Preview, chờ xác nhận, rồi mới ghi.** Chỉ ghi khi user gõ `ok`, `đồng ý` hoặc `duyệt`. Hỗ trợ `sửa`, `viết lại`, `thêm`, `bớt`, `huỷ`.
 3. Lệnh có `--dry-run` thì chạy dry-run trước. Ghi xong thì **đọc lại để xác nhận**.
 4. **Không ghi đè nội dung đã có:**

@@ -22,10 +22,8 @@ Mở **OpenCode** hoặc **Claude Code** trên máy, dán câu sau rồi bấm E
 Cài giúp tôi skill từ repo này, làm theo file INSTALL.md trong repo: <link repo này>
 ```
 
-AI sẽ tự làm phần lớn các bước: tải repo, cài Node.js và lark-cli nếu máy thiếu, cài skill, kiểm tra. Người dùng chỉ làm 2 việc khi AI nhắc:
-
-1. **Nhập App Secret** của app Lark Mewart, trong cửa sổ PowerShell/Terminal riêng mà AI hướng dẫn mở. Xin mã này từ anh Nguyên qua **tin nhắn riêng**. **Không dán mã vào ô chat với AI.**
-2. **Bấm link đăng nhập Lark** mà AI gửi, rồi chọn **Đồng ý / Authorize**.
+AI sẽ tự tải repo, cài skill và kiểm tra lark-cli trên máy đã vào được base content chưa.
+Người dùng chỉ cần làm thêm một việc, nếu Lark chưa đăng nhập hoặc đã hết hạn: **bấm link đăng nhập** AI gửi, rồi chọn **Đồng ý**.
 
 Xong thì **tắt và mở lại** OpenCode/Claude Code.
 
@@ -35,6 +33,7 @@ Xong thì **tắt và mở lại** OpenCode/Claude Code.
 ### Cần có trước
 - Máy Windows 10/11 hoặc macOS, có mạng.
 - Đã cài **OpenCode** hoặc **Claude Code** (AI dùng để cài).
+- Đã có **lark-cli** đăng nhập tài khoản Lark Mewart.
 - Tài khoản Lark của Mewart (`hienmewmakeup.sg.larksuite.com`) đã được share base **Quản lý CONTENT MEW ART MAKEUP** và wiki **MEWART - MARKETING 2026** với quyền chỉnh sửa.
 - Tài khoản GitHub đã được mời vào repo (nếu repo private).
 
@@ -49,7 +48,7 @@ powershell -ExecutionPolicy Bypass -File "$HOME\mewart-content-skill\scripts\ins
 git clone <link repo> ~/mewart-content-skill
 bash ~/mewart-content-skill/scripts/install.sh
 ```
-Sau đó làm bước 4–6 trong [`INSTALL.md`](INSTALL.md).
+Nếu bộ cài báo cần đăng nhập Lark thì làm bước 3 trong [`INSTALL.md`](INSTALL.md).
 
 ---
 
@@ -64,14 +63,13 @@ skills/mewart-content-agent/   Skill (copy vào ~/.claude/skills/)
     nghiem-thu.md              Nghiệm thu + số liệu Facebook (bảng 6.1)
     teaser-vj.md               Kịch bản teaser, run sheet VJ, checklist VJ
     ky-thuat-viet.md           Hook, tránh văn AI, kịch bản video ngắn, carousel
-scripts/install.ps1|.sh        Bộ cài (tự cài Node, lark-cli; không đụng secret)
+scripts/install.ps1|.sh        Bộ cài (copy skill, kiểm tra lark-cli và quyền vào base)
 docs/huong-dan-su-dung.md      Hướng dẫn cho nhân sự content
 INSTALL.md                     Các bước cài dành cho AI agent
 ```
 
 ## Bảo mật
-- Repo **không chứa** App Secret, token hay mật khẩu. Repo có ID base/wiki nội bộ Mewart, nên **giữ repo ở chế độ private**.
-- Secret chỉ được nhập ở terminal của người dùng, `lark-cli` lưu trong keychain của máy.
+- Repo **không chứa** token hay mật khẩu. Repo có ID base/wiki nội bộ Mewart, nên **giữ repo ở chế độ private**.
 
 ## Trạng thái kiểm thử (17/11/2026)
 - Các lệnh **đọc** (base, wiki, doc, sheet, bảng số liệu 6.1) đã chạy thật trên dữ liệu Mewart.
