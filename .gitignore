@@ -1,0 +1,8 @@
+tmp/
+*.ndjson
+*.manifest.json
+.env
+.env.*
+.lark-cli/
+.DS_Store
+Thumbs.db
