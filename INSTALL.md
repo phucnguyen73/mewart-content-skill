@@ -14,7 +14,7 @@
 
 ## Bước 1. Lấy repo về máy
 ```bash
-git clone https://github.com/diginno-net/mewart-content-skill.git "$HOME/mewart-content-skill"
+git clone https://github.com/phucnguyen73/mewart-content-skill.git "$HOME/mewart-content-skill"
 ```
 - Đã có repo thì chạy `git -C "$HOME/mewart-content-skill" pull`.
 - Chưa có `git`: Windows dùng `winget install --id Git.Git -e --silent`, macOS dùng `xcode-select --install`.
