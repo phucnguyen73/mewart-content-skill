@@ -35,7 +35,6 @@ Xong thì **tắt và mở lại** OpenCode/Claude Code.
 - Đã cài **OpenCode** hoặc **Claude Code** (AI dùng để cài).
 - Đã có **lark-cli** đăng nhập tài khoản Lark Mewart.
 - Tài khoản Lark của Mewart (`hienmewmakeup.sg.larksuite.com`) đã được share base **Quản lý CONTENT MEW ART MAKEUP** và wiki **MEWART - MARKETING 2026** với quyền chỉnh sửa.
-- Tài khoản GitHub đã được mời vào repo (nếu repo private).
 
 ### Cài tay (không dùng AI)
 ```powershell
@@ -69,7 +68,7 @@ INSTALL.md                     Các bước cài dành cho AI agent
 ```
 
 ## Bảo mật
-- Repo **không chứa** token hay mật khẩu. Repo có ID base/wiki nội bộ Mewart, nên **giữ repo ở chế độ private**.
+- Repo **không chứa** token hay mật khẩu. Repo public. Các ID base/wiki trong repo chỉ mở được khi đã đăng nhập Lark Mewart và có quyền.
 
 ## Trạng thái kiểm thử (17/11/2026)
 - Các lệnh **đọc** (base, wiki, doc, sheet, bảng số liệu 6.1) đã chạy thật trên dữ liệu Mewart.

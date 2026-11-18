@@ -18,7 +18,6 @@ git clone https://github.com/diginno-net/mewart-content-skill.git "$HOME/mewart-
 ```
 - Đã có repo thì chạy `git -C "$HOME/mewart-content-skill" pull`.
 - Chưa có `git`: Windows dùng `winget install --id Git.Git -e --silent`, macOS dùng `xcode-select --install`.
-- Clone báo lỗi quyền (repo private): nhờ người dùng chạy `gh auth login` bằng tài khoản GitHub đã được mời vào repo. Nếu không có tài khoản, xin anh Nguyên file zip rồi giải nén vào `~/mewart-content-skill`.
 
 ## Bước 2. Chạy bộ cài
 Bộ cài làm các việc sau:
